@@ -1,0 +1,22 @@
+---
+import Social from "./Social.astro"
+
+const platform = "github"
+const username = "withastro"
+const portfolio = "portfolio.sculptingtheweb.dev"
+
+---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+    <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <p>Visit my portfolio at <a href={ `https://${portfolio}`}>{portfolio}</a></p>
+    <Social platform="twitter" username="astrodotbuild"></Social>
+    <Social platform="youtube" username="withAstro"></Social>
+</footer>
